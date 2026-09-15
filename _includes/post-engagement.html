@@ -1,0 +1,21 @@
+<section class="post-engagement" aria-label="文章互动">
+  <p id="busuanzi_container_page_pv" class="post-views" style="display: none;">
+    阅读量：<span id="busuanzi_value_page_pv"></span> 次
+  </p>
+
+  {%- if site.comments.enabled and site.comments.provider == "utterances" -%}
+    <section class="post-comments" aria-labelledby="comments-title">
+      <h2 id="comments-title">评论</h2>
+      <script src="https://utteranc.es/client.js"
+              repo="{{ site.comments.repo | escape }}"
+              issue-term="{{ site.comments.issue_term | default: 'pathname' }}"
+              label="{{ site.comments.label | default: 'comments' }}"
+              theme="{{ site.comments.theme | default: 'github-light' }}"
+              crossorigin="anonymous"
+              async>
+      </script>
+    </section>
+  {%- endif -%}
+</section>
+
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>

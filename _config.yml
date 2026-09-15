@@ -2,3 +2,11 @@ title: AI逆向
 description: 使用AI做逆向分析
 theme: minima
 future: true
+
+comments:
+  enabled: true
+  provider: utterances
+  repo: "AndroidReverser-Test/AndroidReverser-Test.github.io"
+  issue_term: pathname
+  label: comments
+  theme: github-light
